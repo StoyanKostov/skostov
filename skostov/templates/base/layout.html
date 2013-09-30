@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Stoyan Kostov</title>
+	<link href="static/styles.css" rel="stylesheet" type="text/css" media="screen" />
+	<!--[If lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="main" class="body float-clear">
+		<hgroup id="logo">
+			<h1><a href="#" title="Home">Stoyan Kostov</a></h1>
+			<h2>I'm a web developer and this is my site...</h2>
+		</hgroup>
+		<nav id="main-nav">
+			<ul id="first-level">
+				<li id="current"><a href="#">home</a>
+				</li><li><a href="#">about us</a>
+				</li><li><a href="#">Blog</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<h1>
+		{% block title %}Stoyan Kostov's Blog{% endblock %}
+	</h1>
+	<div id="content" class="body float-clear">
+	{% block content %}
+	{% endblock %}
+	</div>
+	<footer class="page-footer body">Powered by Django | Stoyan Kostov</footer>
+</body>
+</html>

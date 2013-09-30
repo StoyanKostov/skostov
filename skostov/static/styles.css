@@ -1,0 +1,217 @@
+html, body, div, header, nav, section, article, aside, figure, footer, time, button, ul, li, a , hgroup, h1, h2, h3, h4, p, form , input { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	font-size: 62.5%;
+	background-color: #0d3040;
+}
+
+h1 {
+	font-size: 1.2em;
+	font-family: Georgia, serif;
+	font-weight: lighter;
+}
+
+h2 {
+	font-size: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #000000;
+	font-size: 2em;
+	font-family: Georgia, serif;
+	font-weight: lighter;
+}
+
+h4 {
+	margin-top: 5px;
+	font-size: 1.2em;
+	font-weight: lighter;
+	color: #7392A4;
+}
+
+p {
+	font-size: 1.2em;
+	text-indent:1.2em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a, a:visited, a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+time {
+	display: block;
+	margin-left: -60px;
+	margin-top: -34px;
+	padding: 12px;
+	width: 40px;
+	height: 40px;
+	color: #ffffff;
+	text-align:center;
+	font-style:italic;
+	border-radius: 40px;
+	box-shadow: 0 4px 3px -2px #0D3040;
+	border: 1px solid #ffffff;
+	float: left;
+	
+	background: rgb(34,126,163); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(34,126,163,1) 0%, rgba(125,185,232,1) 41%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,126,163,1)), color-stop(41%,rgba(125,185,232,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(34,126,163,1) 0%,rgba(125,185,232,1) 41%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(34,126,163,1) 0%,rgba(125,185,232,1) 41%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(34,126,163,1) 0%,rgba(125,185,232,1) 41%,rgba(125,185,232,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(34,126,163,1) 0%,rgba(125,185,232,1) 41%,rgba(125,185,232,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#227ea3', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.body {
+	margin: 0 auto;
+	width: 66%;
+	padding: 20px;
+}
+
+/* >>> header */
+
+#main {
+	min-height: 82px;
+	background-color: #175773;
+	border-bottom: 1px solid #CFCFCF;
+	border-left: 1px solid #7392a4;
+	border-right: 1px solid #7392a4;
+	box-shadow: 0 97px 57px -55px #124459 inset;
+}
+
+	#logo {
+		font-size: 2em;
+		float: left;
+	}
+	
+		#logo h2 {
+			margin-top: 7px;
+			color: #7392a4;
+		}
+	
+	/* >>> main-nav */
+	
+	#main-nav {
+		margin-top: 10px;
+		float: right;
+	}
+
+		#main-nav  ul#first-level>li {
+			margin-top: 5px;
+			padding: 0.7em;
+			float: left;
+			border-top: 1px solid #7392a4;
+			border-bottom: 1px solid #7392a4;
+		}
+		
+		#main-nav  ul#first-level>li:hover {
+			border-bottom: 3px solid #30b8f2;
+		}
+
+			#main-nav ul#first-level>li>a{
+				display: block;
+				font-size: 1.2em;
+				text-transform: capitalize;
+				color: #ffffff;
+				overflow: visible;
+			}
+
+		#main-nav ul#first-level>li#current {
+		
+		}
+
+		#main-nav  ul#first-level>li:hover>a {
+			color: #30b8f2;
+		}
+	/* <<<main-nav */
+
+/* <<< header */
+
+/* >>>content */
+#content {
+	margin-top: 10px;
+	min-height: 600px;
+	border: 1px solid #C7C7C7;
+	border-top: 1px solid #ffffff;
+	background: transparent url('images/noise.jpg') repeat left top; 
+	box-shadow: 0 65px 57px -55px #C7C7C7 inset;
+}
+	/* >>>content-blog & aside*/
+
+article.blog-content {
+	width: 66%;
+}
+
+article.blog-content  hgroup {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eeefef;
+}
+
+div.blog-entry {
+	padding-top: 20px;
+	color: #797979;
+	border-top: 1px solid #ffffff;
+	box-shadow: 0 25px 47px -60px #C7C7C7 inset;
+}
+
+	div.blog-entry  img {
+		display: block;
+		margin-bottom: 20px;
+		width: 600px;
+		border: 1px solid CFCFCF;
+		box-shadow: 0 4px 3px -2px #767676;
+	}
+
+	div.blog-entry  p {
+		
+		padding-top: 10px;
+
+	}
+
+article.blog-content span {
+	display: block;
+	margin: 27px 25px 17px 25px;
+	font-size: 1.5em;
+	font-style:italic;
+	color: #7392A4;
+}
+	/* <<<content-blog & aside */
+/* <<<content */
+
+
+/* >>>page-footer */
+.page-footer  {
+	padding: 28px 150px 0 0;
+	height: 65px;
+	text-align: right;
+	font-size: 1em;
+	color: #7392a4;
+}
+/* <<<page-footer */
+
+.float-clear {
+	display: inline-block;
+	display: block;
+	zoom:1;
+}
+
+.float-clear:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+}

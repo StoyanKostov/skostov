@@ -1,0 +1,16 @@
+{% extends "base/layout.html" %}
+{% block content %}
+	{% for post in posts %}
+		<article class="blog-content">
+			<hgroup>
+				<h3>{{ post.title }}</h3>
+				<h4>{{ post.sub_title }}</h4>
+			</hgroup>
+			<time datetime="{{post.timestamp|date:'Y-m-d'}}" class="published">{{ post.timestamp|date }}</time>
+			<div class="blog-entry">
+				<img src="{{ post.image.url }}" alt="{{ post.alt_tag }}"> 
+				<p>{{ post.content }}</p>
+			</div>
+		</article>
+	{% endfor %}
+{% endblock %}
